@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>魔丸工作室 - 豪猪传</title>
+<style>
+
+@font-face {
+  font-family: myGameFont;
+  src: url("沐瑶随心手写体.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: myGameFont, sans-serif;
+  background-color: #0c0c14;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 8%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 24px;
+  color: #00ccff;
+}
+
+.nav-links a {
+  color: #fff;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #aaa;
+  max-width: 700px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border: 2px solid #00ccff;
+  color: #00ccff;
+  border-radius: 30px;
+  background: transparent;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+section {
+  padding: 80px 8%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.about {
+  background: #111120;
+}
+
+.poster {
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+  background: #18182b;
+  border: 2px dashed #444;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+}
+
+.features {
+  background: #0c0c14;
+}
+
+.feature-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.item {
+  background: #151525;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.item h3 {
+  color: #00ccff;
+  margin-bottom: 15px;
+}
+
+.download {
+  background: #111120;
+  text-align: center;
+}
+
+footer {
+  padding: 40px;
+  text-align: center;
+  background: #080810;
+  color: #666;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">魔丸工作室</div>
+  <div class="nav-links">
+    <a href="#home">首页</a>
+    <a href="#about">介绍</a>
+    <a href="#poster">海报</a>
+    <a href="#feature">特色</a>
+    <a href="#download">下载</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <h1>豪猪传</h1>
+  <p>在2178年，豪猪帮无恶无作，但是惹到了不该惹的人，你要和别人联手制裁他！</p>
+  <button class="btn">即将上线</button>
+</section>
+
+<section class="about" id="about">
+  <h2 class="section-title">游戏介绍</h2>
+  <p style="max-width:900px;margin:0 auto;line-height:1.8;color:#ccc;">
+    豪猪帮无恶无作，但是惹到了不该惹的人，你要和别人联手制裁他！。
+  </p>
+</section>
+
+<section id="poster">
+  <h2 class="section-title">游戏海报</h2>
+  <div class="poster">海报位置</div>
+</section>
+
+<section class="features" id="feature">
+  <h2 class="section-title">游戏特色</h2>
+  <div class="feature-box">
+    <div class="item">
+      <h3>引擎</h3>
+      <p>Godot开源引擎让世界更加真实</p>
+    </div>
+    <div class="item">
+      <h3>剧本</h3>
+      <p>工作室自行创作的剧本，获得更多乐趣！</p>
+    </div>
+    <div class="item">
+      <h3>配置</h3>
+      <p>低配电脑也能流畅运行此游戏！让人人都玩上游戏！</p>
+    </div>
+  </div>
+</section>
+
+<section class="download" id="download">
+  <h2 class="section-title">游戏下载</h2>
+  <p>即将登陆 Steam</p>
+  <div style="margin-top:30px;">
+    <a href="#" class="btn">Steam即将上线</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 魔丸工作室
+</footer>
+
+</body>
+</html>
